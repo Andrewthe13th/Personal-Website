@@ -156,6 +156,10 @@ nav.nav-center ul li a {
   border-color:#FBFAF9;
 }
 
+.card-content img {
+  width: 50%;
+}
+
 /*Project Links Row: */
 .projectLink {
   text-align:center;
