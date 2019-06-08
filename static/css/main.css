@@ -1,5 +1,9 @@
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,h6{
   font-family: 'Lora','Materalize Icon','serif';
+}
+
+h6{
+  padding-left:2.5em;
 }
 
 p,a {
@@ -61,6 +65,7 @@ nav.nav-center ul li a {
 .header div a h3{
   margin-top:10px;
 }
+
 
 /*Footer:*/
 .footer{
