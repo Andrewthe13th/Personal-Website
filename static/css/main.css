@@ -126,11 +126,61 @@ nav.nav-center ul li a {
   width:15%;
   height:15%;
   max-height: 15%;
-  preserveAspectRatio: "xMidYMid meet";
+  /* preserveAspectRatio: "xMidYMid meet"; */
+}
+
+/* New Project Card */
+
+.project-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.project{
+  background-color: #90C048;
+  width: 22em;
+  margin: 10px 0px;
+}
+
+.title{
+  min-height: 3.5em;
+}
+
+.title h5{
+  margin-top: 1em;
+}
+
+.project-content{
+  margin: 10px 10px;
+}
+
+.project .project-content, .project .project-content p, .project .project-content hr {
+  text-align:center;
+  color:#FBFAF9;
+  }
+
+.project hr {
+  color:#FBFAF9;
+  background-color:#FBFAF9;
+  border-color:#FBFAF9;
+}
+
+.summary{
+  min-height: 8em;
+  display: flex;
+}
+
+.summary p{
+  align-self: center;
 }
 
 
-/*Project Card*/
+
+/* OLD Project Card*/
 .cards-container{
   -webkit-column-break-inside:avoid;
   column-count:3;
@@ -161,7 +211,7 @@ nav.nav-center ul li a {
   border-color:#FBFAF9;
 }
 
-.card-content img {
+.proj-img {
   width: 50%;
 }
 
@@ -180,16 +230,13 @@ nav.nav-center ul li a {
   /* margin: 0 5% 0 5%; */
 }
 
-@media screen and (max-width: 991px), (max-width: 767px),(max-width: 479px){
-  /* start of large tablet styles */
-  .projectLink li {
-    /*Creates Horizontal List:*/
-    display: inline-block;
-    zoom:1;
-    *display:inline;
-    /*Provides proper spacing for each item.*/
-    margin: 0 5% 0 5%;
-  }
+.projectLink li {
+  /*Creates Horizontal List:*/
+  display: inline-block;
+  zoom:1;
+  *display:inline;
+  /*Provides proper spacing for each item.*/
+  margin: 0 5% 0 5%;
 }
 
 .projectLink li a:not(.btn) svg{
@@ -199,7 +246,13 @@ nav.nav-center ul li a {
   height:50%;
 }
 
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+.project .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
   /*Changes color of Icon:*/
   color:#FBFAF9;
+}
+
+@media screen and (min-width: 200em){
+  .project-container{
+    width: 150em;
+  }
 }

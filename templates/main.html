@@ -30,96 +30,142 @@
     </div>
   </div>
   <!--Projects-->
-  <div class="row">
-    <div class="col s12 m9 l9 offset-m2 offset-l2">
-        <h5 style="display: block;">Projects:</h5>
-    </div>
-    <div class="col s12 m9 l10 offset-m2 offset-l1 cards-container">
-      <div class="card" style="max-width:470px;min-width: 266px;">
-        <div class="card-content">
-          <span class="title">
+  <!-- <div class="row"> -->
+    <div class="row">
+  <div class="project-container">
+    <div class="project">
+      <div class="project-content">
+        <div class="project-header">
+          <div class="title">
             <h5>My Personal Website</h5>
-          </span>
-          <p>Tech Used: Flask, Python, GCS, HTML5, CSS, Bootstrap</p>
+          </div>
+          <p class="project-tech">Tech Used: Flask, Python, GCS, HTML5, CSS, Bootstrap</p>
           <hr>
-          <p>
-            This website was created for personal use to display my accomplishments and projects. It is currently hosted under Google Cloud's app engine.
-          </p>
-        </div>
-        <div class="card-content">
-          <img src="{{url_for('static',filename='images/website.jpg')}}" alt=""/ class="img-fluid">
-        </div>
-        <div class="card-action">
-          <ul class="projectLink">
-            <li><a href="https://github.com/Andrewthe13th/Personal-Website"><i class="fab fa-github-square fa-3x"></i></a></li>
-            <li><a href="https://www.andrewdelafuente.com/"><i class="fas fa-external-link-square-alt fa-3x"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="card" style="max-width:470px;min-width: 266px;">
-          <div class="card-content">
-            <span class="title">
-              <h5>Ecommerce Website Builder</h5>
-            </span>
-            <p>Tech Used: AWS, Python, Nginx, Javascript, HTML5, CSS</p>
-            <hr>
+          <div class="summary">
             <p>
-              Website that allowed users to create their own ecommerce websites on EC2 instances on AWS through API calls. Users created secure accounts under amazon cognitio or by using third party sign in with using OAuth2 through google. Used paypal on user sites to enable cart funcionality and payment options.
+              This website was created for personal use to display my accomplishments and projects. It is currently hosted under Google Cloud's app engine.
             </p>
           </div>
-          <div class="card-content">
-            <img src="{{url_for('static',filename='images/eb1.jpg')}}" alt=""/ class="img-fluid">
-            <img src="{{url_for('static',filename='images/eb2.jpg')}}" alt=""/ class="img-fluid">
+        </div>
+        <div class="project-img">
+            <img class="proj-img" src="{{url_for('static',filename='images/website.jpg')}}" />
+        </div>
+        <div class="project-footer">
+            <div class="card-action">
+                <ul class="projectLink">
+                  <li><a href="https://github.com/Andrewthe13th/Personal-Website"><i class="fab fa-github-square fa-3x"></i></a></li>
+                  <li><a href="https://www.andrewdelafuente.com/"><i class="fas fa-external-link-square-alt fa-3x"></i></a></li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="project">
+        <div class="project-content">
+          <div class="project-header">
+            <div class="title">
+              <h5>Ecommerce Website Builder</h5>
+            </div>
+            <p class="project-tech">Tech Used: AWS, Python, Nginx, Javascript, HTML5, CSS</p>
+            <hr>
+            <div class="summary">
+                <p>
+                    Website that allowed users to create their own ecommerce websites on EC2 instances on AWS through API calls. Used paypal on user sites to enable cart funcionality and payment options. 
+                  </p>
+              </div>
           </div>
-          <div class="card-action">
-            <ul class="projectLink">
-              <li><a href="https://github.com/PaulgSmith/E-builder"><i class="fab fa-github-square fa-3x"></i></a></li>
-            </ul>
+          <div class="project-img">
+              <img class="proj-img" src="{{url_for('static',filename='images/eb1.jpg')}}" />
+            </div>
+          <div class="project-footer">
+              <div class="card-action">
+                  <ul class="projectLink">
+                    <li><a href="https://github.com/PaulgSmith/E-builder"><i class="fab fa-github-square fa-3x"></i></a></li>
+                  </ul>
+                </div>
           </div>
         </div>
-        <div class="card" style="max-width:470px;min-width: 266px;">
-            <div class="card-content">
-              <span class="title">
-                <h5>Random Restaurant Finder</h5>
-              </span>
-              <p>Tech Used: NoSQL, REACT.js, Javascript, CSS, HTML </p>
-              <hr>
-              <p>
-                Website created to help people find a place to eat when they dont know what to eat.
-              </p>
+      </div>
+      <div class="project">
+          <div class="project-content">
+            <div class="project-header">
+              <div class="title">
+                  <h5>Random Restaurant Finder</h5>
+                </div>
+                <p class="project-tech">Tech Used: NoSQL, REACT.js, Javascript, CSS, HTML </p>
+                <hr>
+                <div class="summary">
+                    <p>
+                        Website created to help people find a place to eat when they dont know what to eat.
+                      </p>
+                  </div>
             </div>
-            <div class="card-content">
-              <img src="{{url_for('static',filename='images/rrf.jpg')}}" alt=""/ class="img-fluid">
-            </div>
-            <div class="card-action">
-              <ul class="projectLink">
-                <li><a href="https://github.com/jonmoubayed/IDC"><i class="fab fa-github-square fa-3x"></i></a></li>
-              </ul>
+            <div class="project-img">
+                <img class="proj-img" src="{{url_for('static',filename='images/rrf.jpg')}}" />
+              </div>
+            <div class="project-footer">
+                <div class="card-action">
+                    <ul class="projectLink">
+                      <li><a href="https://github.com/jonmoubayed/IDC"><i class="fab fa-github-square fa-3x"></i></a></li>
+                    </ul>
+                  </div>
             </div>
           </div>
+        </div>
+        <div class="project">
+            <div class="project-content">
+              <div class="project-header">
+                <div class="title">
+                    <h5>Food Chat App</h5>
+                  </div>
+                  <p class="project-tech">Tech Used: HTML5, CSS NoSQL, AJAX, Javascript</p>
+                  <hr>
+                  <div class="summary">
+                      <p>
+                          Website like instagram, but strictly about posting on food people eat. 
+                        </p>
+                    </div>
+              </div>
+              <div class="project-img">
+                  <img class="proj-img" src="{{url_for('static',filename='images/tender.jpg')}}" />
+                </div>
+              <div class="project-footer">
+                  <div class="card-action">
+                      <ul class="projectLink">
+                        <li><a href="https://github.com/molinab297/Tender"><i class="fab fa-github-square fa-3x"></i></a></li>
+                      </ul>
+                    </div>
+              </div>
+            </div>
+          </div>
+  </div>
+  
+    </div>
+    <!-- <div class="col s12 m9 l9 offset-m2 offset-l2">
+
           <div class="card" style="max-width:470px;min-width: 266px;">
               <div class="card-content">
-                <span class="title">
+                <div class="title">
                   <h5>Food Chat App</h5>
-                </span>
-                <p>Tech Used: HTML5, CSS NoSQL, AJAX, Javascript</p>
+                </div>
+                <p class="project-tech">Tech Used: HTML5, CSS NoSQL, AJAX, Javascript</p>
                 <hr>
                 <p>
                   Website like instagram, but strictly about posting on food people eat. 
                 </p>
               </div>
               <div class="card-content">
-                <img src="{{url_for('static',filename='images/tender.jpg')}}" alt=""/ class="img-fluid">
+                <img class="proj-img" src="{{url_for('static',filename='images/tender.jpg')}}" />
               </div>
               <div class="card-action">
                 <ul class="projectLink">
                   <li><a href="https://github.com/molinab297/Tender"><i class="fab fa-github-square fa-3x"></i></a></li>
                 </ul>
               </div>
-            </div>
+            </div> -->
             
 
-    </div>
+    <!-- </div> -->
   </div>
 
 </div>
