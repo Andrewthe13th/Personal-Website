@@ -130,6 +130,14 @@ nav.nav-center ul li a {
 }
 
 /* New Project Card */
+.project-title{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.row > hr{
+  width: 20em;
+}
 
 .project-container{
   display: flex;
